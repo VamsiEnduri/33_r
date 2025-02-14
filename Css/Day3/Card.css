@@ -1,0 +1,23 @@
+.card{
+    padding: 4px;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.card > p{
+    margin: 0;
+}
+.card >img {
+    width: 100%;
+    height: 70%;
+}
+.btns{
+    margin-top:20px ;
+}
+
+.btns span{
+   background-color: lightskyblue;
+   border: 1px solid black;
+   padding: 5px 20px; 
+}

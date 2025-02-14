@@ -1,0 +1,23 @@
+div?
+  div is container tag which holds multiple elements
+
+  type of units in css:-- 2
+      1. abs (inch, mm,cm,px)
+      2.relative (em,rem,%,vw,vh)
+
+      combinational selectors
+   div1   + h1
+   div1   ~ h1 tilde
+     div1  > h1
+     div1    h1
+
+
+what is box-modal:--
+it is box kind of container which is surrounded every html element
+
+box-modal consists of 4 prperties
+1.padding  -- it is used to give SPACE b/w the content and border
+2.margin
+3.border  -- it isused to give a line kind of border around that element
+4.content  -- content
+5.outline
