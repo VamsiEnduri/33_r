@@ -1,0 +1,174 @@
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-download{
+    display: flex;
+    align-items: center;
+}
+#nav_links{
+    display: flex;
+    column-gap: 20px;
+}
+#nav_links > a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(229, 158, 26);
+    font-weight: 900;
+}
+#page{
+    color: rgb(229, 158, 26);
+    font-weight: 900;
+}
+#nav-download{
+    gap: 10px;
+    background-color: rgb(229, 158, 26);
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+#downloadBtn{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+#nav-download > img {
+    border-radius: 50%;
+    /* background-color: n; */
+}
+
+
+#profile{
+    background-color: rgb(130, 203, 231,0.3);
+    /* background-color: yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#profile > #profile-info{
+   margin: auto;
+    width: 50%;
+    /* background-color: red; */
+    /* margin-left: 100px; */
+}
+
+#profile-info > h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+#emailSubmit{
+    width: 80%;
+    padding:  20px !important;
+    display: inline-block;
+    background-color: #71B4CA;
+    padding: 10px;
+}
+#emailSubmit > input {
+    width:80%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+#emailSubmit > span{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:rgb(229, 158, 26) ;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+#emailSubmit > span:hover{
+    background-color: orange !important;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+#chooseUs{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#chooseUs > #chooseImage{
+    width: 40%;
+}
+
+#chooseImage > img {
+width: 100%;    
+border-radius: 50px;
+}
+
+#chooseUs > #chooseText{
+    width: 40%;
+}
+
+#chooseText > h1{
+    font-size: 40px;
+}
+
+
+#chooseText > p{
+    font-size: 20px;
+}
+
+ul > li{
+    line-height: 30px;
+}
+li::marker{
+    color: orange;
+    font-size: 20px;
+}
+
+
+#services {
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+#services-strategies{
+    /* margin: auto; */
+    width: 30%;
+    text-align: center;
+    background-color: yellow;
+}
+#services-strategies > span{
+    padding: 5px 20px;
+    border: 2px solid orange;
+    /* color:; */
+}
+
+#services-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: indianred; */
+}
+
+.card{
+    /* line-height: 30px; */
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* align-items: center; */
+    background-color: purple;
+}
+.card > .card-left{
+    /* line-height: 40px; */
+    height: 20px;
+    margin-top: 25px;
+    
+    align-items: start;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 4px;
+    /* padding: ; */
+}
