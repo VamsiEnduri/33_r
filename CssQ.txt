@@ -1,0 +1,22 @@
+what is css?
+what is css syntax?
+what is css selector?\how many typeof selectors? 
+id, class, elem, * (general seclectors )
+>  , space (combinator selctors)
+how can you link css file to html file?
+what is the d/f b/w rgba and rgb?
+how many type of color giving are there in css?
+what is hexa color giving and what is the value that you nee to pass as? (#rrggbb) (0-9) (a-f) #11ADC2 #2234dc
+what is d/ the b/w pading and margin ? ****
+what is the d/f b/w the border and outline? --- >
+what is the d/ b/w the id and class?
+what is d/f b/w the font and text? >>>>>
+what si specificuty?
+specificity among id class eleme universal selectors? id>class>ele>universal
+in how many ways wwe can do styling for html doc?
+inline>internal>external
+type of units in css? realtive(em,rem,%,vw,vh), absolute (px)
+what is display property?
+what si the d/f b/w the displayu:inline vs display:block?
+what is box-modal?
+what ius d/f b/w the box-shadow and text-shadow?

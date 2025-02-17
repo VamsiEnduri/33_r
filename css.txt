@@ -21,3 +21,8 @@ box-modal consists of 4 prperties
 3.border  -- it isused to give a line kind of border around that element
 4.content  -- content
 5.outline
+
+
+
+https://themesflat.co/html/
+restaurant/coffee/about.html :--
