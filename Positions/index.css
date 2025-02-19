@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+}
+/* div,h1,p,h3{
+   
+    background-color: red;
+    height: 250px;
+    width: 250px;
+}
+
+div{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+h1{
+    position: relative;
+    left: 76rem;
+    
+    bottom: 250px;
+}
+p{
+    position: relative;
+    top: -100px;
+}
+
+h3{
+    position: relative;
+    left: 75rem;
+    bottom: 350px;
+} */
+
+
+
+/* absolute */
+/* div{
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    background-color: purple;
+    width: 250px;
+    height: 250px;
+} */
+
+/* absolute & realtive */
+
+/* div{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: yellow;
+    padding: 10px;
+}
+div > img {
+    width: 100%;
+    height: 100%;
+}
+div >span{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    padding: 5px 15px;
+} */
+ #text{
+    z-index: 1;
+ }
+
+#sidebar{
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+    width: 40%;
+    background-color: green;
+    /* position: fixed;
+    left: 0;
+    top: 6rem; */
+    height: 100vh;
+}
+
+#navbar{
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar > img {
+    width: 100px;
+    height: 70px;
+}
+
+img{
+    padding: 10px;
+}
+
+#img1{
+    /* z-index: 1; */
+    z-index: -1;
+
+    width: 200px;
+    position: relative;
+    left: 50rem;
+    bottom: 100px;
+    background-color: red;
+}
+
+#img2{
+    z-index: -0;
+    position: relative;
+    left:32rem ;
+    width: 400px;
+    background-color: green;
+}
+#img3{
+    position: relative;
+    z-index: -2;
+    background-color: orange;
+    width: 600px;
+}

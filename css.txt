@@ -24,5 +24,4 @@ box-modal consists of 4 prperties
 
 
 
-https://themesflat.co/html/
-restaurant/coffee/about.html :--
+https://themesflat.co/html/restaurant/coffee/about.html :--
