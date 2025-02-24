@@ -1,0 +1,165 @@
+/* #box:hover{
+    transform: scale(0.1);
+}
+
+#box {
+    margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  transition: transform 2s ease-in-out 1s;
+  animation-name: scaling;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+}
+
+h1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation-name: scaling;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s; 
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes scaling{
+    0%{
+        transform: scale(0.3);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.7);
+    }
+}
+
+ */
+
+
+
+ /* #box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: rotation;
+    animation-duration: 10s;
+    border-radius: 20px;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+
+
+ @keyframes rotation {
+ 0%{
+    transform: rotate(0deg);
+    background-color: green;
+ }
+ 50%{
+    transform: rotate(180deg);
+    background-color: red;
+ }
+ 70%{
+    transform: rotate(270deg);
+    background-color: blue;
+
+ }
+ 100%{
+    transform: rotate(360deg);
+    background-color: orange;
+
+ }
+
+    
+ } */
+
+
+ /* #box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+    animation-name: spinner;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    
+ }
+ @keyframes spinner {
+  
+    0%{
+        border-top:5px solid blue ;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        border-top: 5px solid blue;
+        transform: rotate(360deg);
+    }
+    
+ } */
+
+
+
+ /* rolling */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    
+    /* background:linear-gradient(to right, red, blue,yellow,green) ; */
+height: 100vh;
+
+/* background:linear-gradient(to top right,white, blue,green) ; */
+
+
+background:linear-gradient(to bottom right,white, blue,green) ;
+
+
+/* background:radial-gradient(circle,white, blue,green) ; */
+
+/* background:radial-gradient(ellipse,white, blue,green)  */
+
+
+/* background: conic-gradient(from 90deg, red, yellow); */
+
+
+    /* background:linear-gradient(to top,white, blue) ; */
+    /* background-repeat: no-repeat; */
+ }
+ #box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: rolling 1s linear 0s infinite;
+    animation-direction: alternate;
+ }
+
+ @keyframes rolling {
+    0%{
+    transform:translateX(100px) rotate(0deg) ;
+    background-color: green;
+ }
+ 50%{
+    transform:translateX(200px) rotate(180deg) ;
+    background-color: red;
+ }
+ 70%{
+    transform:translateX(300px) rotate(270deg) ;
+    background-color: blue;
+ }
+ 100%{
+    transform:translateX(400px) rotate(360deg) ;
+    background-color: orange;
+
+ }
+ }
