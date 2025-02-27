@@ -1,0 +1,107 @@
+/* .parent h1{
+    background-color: red;
+}
+
+.parent > h1{
+    background-color: yellow;
+}
+
+.parent ~ li{
+    font-size: 60px;
+    color:red;
+}
+
+.parent + li{
+    background-color: purple;
+    font-size: 30px;
+    color: wheat;
+} */
+
+
+
+p::first-letter{
+    background-color: yellow;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    padding: 20px;
+    color: green;
+    border: 2px solid black;
+}
+
+p::first-line{
+    background-color: red;
+    color: white;
+}
+p::selection{
+    background-color: orange;
+    color: white;
+}
+h1::before{
+    /* content: "vamsiiiiiiiiiiiiiiiiiiiiiii1234567890"; */
+    content: "🚀";
+    content: "ok fine";
+    content: "";
+}
+
+h1::after{
+    /* content: url("https://media.istockphoto.com/id/2119799972/photo/spring-evening-view-of-the-eiffel-tower-in-paris.jpg?s=2048x2048&w=is&k=20&c=oLwJCyVxPqubEcZfJCMX8TfwxDQX22ZcYyl0I4zvi-o="); */
+    /* width: 20%; */
+}
+
+input{
+    width: 70%;
+    padding: 15px 0px;
+}
+input:focus{
+    font-size: 50px;
+    border: none;
+    outline: none;
+    background-color:lightcoral ;
+}
+
+input[type="password"]{
+ 
+    transition: all 5s ease-in-out 1s;
+}
+
+input[type="password"]:focus{
+    width: 100%;
+    background-color: yellow;
+}
+input[placeholder*="email"],input[placeholder*="password"]{
+    background-color: purple;
+}
+
+li:nth-child(3){
+    background-color: purple;
+}
+
+li:first-child{
+    background-color: green;
+}
+
+li:last-child{
+    background-color: yellow;
+}
+li:nth-child(2){
+    background-color: red;
+}
+/* input[placeholder*="email"]{
+    background-color: purple;
+} */
+
+::placeholder{
+    font-size: 30px;
+    color: black;
+}
+
+input[id="7thClassBoy"]:checked{
+    background-color: green;
+}
+
+
+
+input[id="7thClassGirl"]:checked{
+    background-color: yellow;
+}
