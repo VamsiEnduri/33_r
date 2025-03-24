@@ -1,0 +1,29 @@
+.bg-primary{
+    background-color: rgb(255, 136, 0) !important ;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.carousel-item{
+    width: 100%;
+    height: 650px;
+}
+.carousel-item > img{
+    width: 100%;
+    height: 100% !important ;
+}
+#cardContainer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    padding: 5px;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

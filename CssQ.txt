@@ -20,3 +20,21 @@ what is display property?
 what si the d/f b/w the displayu:inline vs display:block?
 what is box-modal?
 what ius d/f b/w the box-shadow and text-shadow?
+what is d/f b/w the display:none vs visibility:hidden
+what is the d/f b/w the rem vs em
+what is the d/f b/w flex vs grid
+why we use grid-template -columns 
+what is use of mediq quries
+what is d/f b/w the display and position
+what is d/f b/w the transition vs transforms?
+what is the d/ fb/w rotate vs translate in transform?
+why we need to use z-index and what are the value sthat
+ we can give to the z-index property?
+ what is property vs value?
+ what is postion realtuve vs postion:absolute
+ what is the d/f the b/w the rgb abd rgba ?
+ what are animations in css?
+ what is the d/ b/w the pseudo classes vs pseudo elements
+ what is opacity?
+ what legend tag?
+ 
