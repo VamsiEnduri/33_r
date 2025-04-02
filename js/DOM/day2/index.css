@@ -1,0 +1,17 @@
+#signalsContainer{
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 500px;
+    height: 300px;
+}
+.signal{
+    width: 80px;
+    margin: auto;
+    line-height: 30px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+}

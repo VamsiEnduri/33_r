@@ -1,0 +1,12 @@
+DOM (intro )
+DOM  (document) scripting js :-- done intercation r functyionality r dynamic behaviour
+
+access :-- getElbYid, className , querySeelctor, 
+creating :-- createElement,
+append :- appendChild, append
+remove :-- remove , removeChild
+
+
+ex:1 :-- colr changing on btn click
+ex:2 :-- circle, square shapes create based on btn click
+ex:3 :-- data fuleter based on category and after display the data in cards
