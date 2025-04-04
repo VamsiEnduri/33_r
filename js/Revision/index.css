@@ -1,0 +1,21 @@
+.cardDiv{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.cardDiv > .cardImg{
+    width: 100%;
+    height: 65%;
+}
+
+#vamsi{
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+#vamsi > img {
+    width: 100%;
+}

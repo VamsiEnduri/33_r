@@ -1,0 +1,49 @@
+what is js?
+what is syncronous single thread lang?
+who will exexute js code? and whre will be the js code gete exeuted?
+what is js engine?
+what is callstack?
+how many js runtime environmenets are there? 2
+what are web apis? DOM, Lcalstorage ,setTimeout, console, location,BOM
+what is event loop?
+what is callback queue?
+what is microtask queue?
+what is data ?
+how many data types are there in js? 2
+what is d/f b/w the primitive and non-primitive data types?
+examples for non-primitive?
+what is array ?
+what is obeject?
+how can we access the elements in the array? index
+object ? .
+what is opeartor?
+how many type of opeartorsa re thre in js?
+why we use logical opeartors ? and whta is d/f b/w the && and || ?
+what is d/f b/w the == and ===? loosely checked and strictly checked opeartors?
+what is function in js?
+what is named function expression?
+what is function expression?
+what is function statement?
+what is function definition?
+what is the b/w the args and params?
+what is DOM? and wjy we need DOM?
+how can you manipulate the doc? we can access , crete, remove, style , setAttrinutes,append 
+how can you perform events in js?
+types of events? mouse, keyboard,form, clipboard, drag and drop, etc..
+in how many you can acess the elements in html file?
+gtByid
+betElementsByClass
+queryselectro
+getTga
+getTga
+querySelectroAll
+
+what is d/f b/w the innerHtml and textCotent?
+what is d/ b/w the remove and removeChild()
+what is d/ b/w the append and appendChild()
+
+how can you give style to a elemnt from js?
+
+data.filter((item)=>{
+    console.log(item)
+})
