@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    dashboard
+    <button onclick="logout()">logout</button>
+    <script>
+
+    //   const user= JSON.parse( localStorage.getItem("loggedInUser"))
+
+     function logout(){
+        const user= JSON.parse( localStorage.getItem("loggedInUser"))
+      if(user){
+         let confirmation=confirm("are you sure to logoit??")
+         if(confirmation){
+            localStorage.removeItem("loggedInUser")
+             window.location.href="login.html"
+         }
+     }
+
+    }
+    </script>
+</body>
+</html>
+
+protecting routes

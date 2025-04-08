@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter name here" id="name"> 
+    <button onclick="handleNameSubmit()">submit</button>
+    <script>
+     
+             function handleNameSubmit(){
+                let namesAll=JSON.parse(localStorage.getItem("names")) || []
+                // console.log(namesAll,"names array from locstorage")
+                let inputName=document.getElementById("name").value.trim();
+                namesAll.push(inputName)
+                localStorage.setItem("names",JSON.stringify(namesAll))
+                inputName.value=""
+                displayNames(namesAll)
+                // console.log(namesAll,"data after sending to locastorage")
+             }
+
+             function displayNames(allNames){
+            console.log(allNames)
+           
+            allNames.forEach((x)=>{
+                let liTag=document.createElement("li");
+                liTag.innerText=x
+                document.body.appendChild(liTag)
+            })
+             }
+    </script>
+</body>
+</html>
