@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="randomClr">randomClr</button>
+    <script>
+      // let age=12.1;
+      // let xyz=Math.ceil(age)
+      // console.log(xyz,"floor value") //13
+
+      //floor
+
+      // let age=12.9;
+      // let xyz=Math.floor(age)
+      // console.log(xyz,"floor value") //13
+
+      // pow
+
+      // let a=2;
+      // let b=4
+      // let xyz=Math.pow(a,b)
+      // console.log(xyz,"pow value") //13
+
+      //max
+      // let ages=[22,20,11,44]
+      // let macValue=Math.max(10,12)
+      // console.log(macValue,"max value")
+
+      //min
+
+      // let macValue=Math.min(10,12)
+      // console.log(macValue,"min value")
+
+      //random
+      // console.log(Math.floor(Math.random() * 10))
+      // const a=0.888
+      // const randomNum=Math.random() *10
+      // const flooredValue=Math.floor(randomNum)
+      // console.log(flooredValue)
+
+      //   let otp = "";
+      //   for (let i = 0; i < 6; i++) {
+      //     const randomNum = Math.floor(Math.random() * 10);
+      //     // console.log(randomNum);
+      //     otp += randomNum;
+      //   }
+      //   console.log(typeof otp, "otp");
+
+      // const randomNum=Math.ceil(Math.random()*10)
+      // console.log(randomNum)
+
+      //
+      //   # hexa a-f 0-9
+
+      // random color generation
+
+      // hexaUsages[3]
+
+      // for(let i=0;i<6;i++){
+      //   const indexNum= Math.floor(Math.random () * hexaUsages.length)
+      //   console.log(indexNum)
+
+      // //   console.log(indexNum)
+      // }
+
+      let btn = document.getElementById("randomClr");
+      btn.addEventListener("click", () => {
+        randomClrGenerator()
+      });
+
+      function randomClrGenerator(){
+        const hexaUsages = "abcdef0123456789";
+        console.log(hexaUsages.length, "len");
+        let hexaColor = "#";
+        for (i = 0; i < 6; i++) {
+          const indexNum = Math.floor(Math.random() * hexaUsages.length);
+          console.log(indexNum);
+          hexaColor += hexaUsages[indexNum];
+        }
+
+        console.log(hexaColor);
+
+        document.body.style.backgroundColor = hexaColor;
+      }
+      //   console.log(indexNum)
+
+      // # af7575
+      // # 7745ad
+    </script>
+  </body>
+</html>

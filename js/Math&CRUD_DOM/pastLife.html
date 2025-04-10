@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Past Life Detector 🔮</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS';
+      text-align: center;
+      background: linear-gradient(#ffe9ec, #ffd4d4);
+      padding: 50px;
+    }
+    input, button {
+      padding: 12px;
+      font-size: 18px;
+      margin: 10px;
+    }
+    #output {
+      margin-top: 30px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h1>🔮 Who Were You in Your Past Life?</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name..." />
+  <button onclick="revealPastLife()">Reveal ✨</button>
+
+
+  <div id="output"></div>
+
+
+  <script>
+  const pastLives = [
+  "a King of a hidden pizza kingdom 🍕👑",
+  "the world's first pani puri scientist 🌰🧪",
+  "a professional napper 😴💤",
+  "a time traveler stuck in 1999 ⏳📟",
+  "a talking parrot with attitude 🦜😎",
+  "a ghost who only scared math teachers 👻➕",
+  "the original biryani chef of Hyderabad 🍛🔥",
+  "a superstar goat in a village movie 🐐🎥",
+  "the inventor of invisible slippers 👣🩴",
+  "a legendary auto driver in Mars 🚀🛺",
+  "a tea master in heaven ☕😇",
+  "the secret twin of Baahubali 💪👑",
+  "a TikTok dancer from the dinosaur age 🦖💃",
+  "a coconut vendor for aliens 🥥👽",
+  "a DJ in a haunted house 🎧👻",
+  "a cat trainer for Bollywood movies 🐱🎬",
+  "a yoga guru for penguins 🧘‍♂️🐧",
+  "the squirrel who stole all temple prasadam 🐿️🍛",
+  "a magician who vanished homework 🎩📚",
+  "a romantic banana in fruit salad love story 🍌💘🍓",
+  "the one who taught chickens how to cross roads 🐔➡️🛣️",
+  "a lawyer who only fought samosa theft cases ⚖️🥟",
+  "a hacker squirrel from Kurnool 🌰💻",
+  "a dhol player at alien weddings 🛸🥁",
+  "a prankster cloud that rained only during exams 🌧️📓",
+  "a fitness coach for lazy buffaloes 🐃🏋️",
+  "the first buffalo astronaut 🐄🚀",
+  "a barber who gave stylish cuts to ghosts ✂️👻",
+  "a lassi therapist for angry humans 🥤😠",
+  "a secret agent disguised as a dosa 🍽️🕵️‍♂️"
+];
+
+
+  function revealPastLife() {
+      const name = document.getElementById("nameInput").value.trim();
+      const output = document.getElementById("output");
+
+
+      if (!name) {
+        output.innerHTML = "🙄 Please enter your name!";
+        return;
+      }
+
+
+    //   const randomLife = ;
+      const pastLife=pastLives[Math.floor(Math.random() * pastLives.length)]
+      output.innerHTML = `🧙‍♂️ ${name}, in your past life you were <strong>${pastLife}</strong>`;
+
+    }
+
+
+  </script>
+
+
+</body>
+
+
+</html>
+

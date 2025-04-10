@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .todo-item {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>📝 Simple Todo</h2>
+  <input type="text" id="todo-input" placeholder="Enter a task" />
+  <button id="add-btn">Add</button>
+  <div class="todo-list"></div>
+
+
+  <script>
+    const input = document.getElementById("todo-input");
+    const addBtn = document.getElementById("add-btn");
+    const todoList = document.querySelector(".todo-list");
+
+
+    addBtn.addEventListener("click", () => {
+      const task = input.value.trim();
+      if (task === "") {
+        alert("Please enter a task!");
+        return;
+      }
+
+
+      // Create task item using innerHTML
+      const taskDiv = document.createElement("div");
+      taskDiv.className = "todo-item";
+      taskDiv.innerHTML = `
+        <span class="task-text">${task}</span>
+        <button class="edit-btn">✏️</button>
+        <button class="delete-btn">🗑️</button>
+      `;
+
+
+      // Add delete functionality
+      const deleteBtn = taskDiv.querySelector(".delete-btn");
+      deleteBtn.addEventListener("click", () => {
+      const confirmation=confirm("are you sure to dlete?")
+      if(confirmation){
+        taskDiv.remove();
+        alert("dketed successfully!!!!")
+      }
+      });
+
+
+      // Add edit functionality
+      const editBtn = taskDiv.querySelector(".edit-btn");
+      editBtn.addEventListener("click", () => {
+        const span = taskDiv.querySelector(".task-text");
+        const newTask = prompt("Edit your task:", span.textContent);
+        if (newTask !== null && newTask.trim() !== "") {
+          span.textContent = newTask.trim();
+        }
+      });
+
+
+      todoList.appendChild(taskDiv);
+      input.value = "";
+    });
+  </script>
+</body>
+</html>

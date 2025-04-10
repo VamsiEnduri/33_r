@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter a task" id="taskInput"/>
+    <button>Add</button>
+    <div id="allTasks"></div>
+
+    <script>
+        const btn=document.querySelector("button");
+        const text=document.getElementById("taskInput")
+        let allTasksContainer=document.getElementById("allTasks");
+        btn.addEventListener("click",()=>{
+                   const textValue=text.value.trim()
+                   
+                   if(textValue === ""){
+                    return alert("pls enter something in input bar")
+                   }
+                   let singleTask=document.createElement("div")
+                   singleTask.innerHTML=`
+                   <span>${textValue}</span>
+                   <button>✏️</button>
+                   <button id="dlteBtn">🗑️</button>
+                   `
+                   allTasksContainer.append(singleTask)
+
+                   let dlteBtn=singleTask.querySelector("#dlteBtn")
+    
+                    dlteBtn.addEventListener("click",()=>{
+                        singleTask.remove()
+                    })
+
+                    text.value=""
+
+
+        })
+    </script>
+</body>
+</html>

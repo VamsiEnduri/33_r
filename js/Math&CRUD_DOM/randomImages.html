@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>randomImg</button>
+    <div id="imgContainer"></div>
+    <script>
+        const images=["https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg","https://i.pinimg.com/474x/2c/85/f3/2c85f3cd66f8d3d7fcb93e6da8eee08c.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN38pipem7OdsU4v6qMYTef7aRbsqApixkRg&s"]
+
+
+        const btn=document.querySelector("button");
+        const imgContainer=document.getElementById("imgContainer")
+        btn.addEventListener("click",()=>{
+            imgContainer.innerHTML=""
+            const imagesIndex=Math.floor(Math.random() * images.length)
+            let imgTag=document.createElement("img");
+
+            imgTag.setAttribute("src",images[imagesIndex])
+            imgContainer.append(imgTag)
+        })
+
+
+        
+    </script>
+</body>
+</html>
