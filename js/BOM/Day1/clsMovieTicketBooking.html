@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>book yr fav movie ticket</h1>
+    <button id="bookNow">bookNow</button>
+
+    <script>
+        const btnBook=document.getElementById("bookNow");
+        btnBook.addEventListener("click",()=>{
+            alert("choose yr fav movie in fav theatre with seats you want for")
+
+            const allTheatreLists=["PVR","AMB","LULU","NEXUS"]
+
+let theatreDetails="choose theatre :-- \n"
+
+allTheatreLists.forEach((item,index)=>{
+    theatreDetails += `${index +1} :   ${item} \n`
+})
+
+          const choosedTh=  prompt(theatreDetails)
+          const confirmedTheatre=allTheatreLists[choosedTh-1]
+
+
+
+          let movieName=prompt("choose yr movie");
+
+          let chooseRow=prompt("choose row (A-H):--").toUpperCase();
+          let seatNo1=prompt("choose seats in b/w 1-15")
+          let confirmTicketBooking=confirm(`you choosed ${confirmedTheatre} and ${movieName} and ${chooseRow} and ${seatNo1} `)
+
+          if(confirmTicketBooking){
+           const ticketDownload= window.open("","_blank")
+           ticketDownload.document.write(`
+             <h1>🎟️ Movie Ticket</h1>
+        <p><strong>Movie:</strong> ${movieName}</p>
+        <p><strong>Theatre:</strong> ${confirmedTheatre}</p>
+        <p><strong>Row:</strong> ${chooseRow}</p>
+        <p><strong>Seats:</strong> ${seatNo1}</p>
+        <p><strong>Total Paid:</strong> ₹300</p>
+        <p><strong>Status:</strong> Confirmed ✅</p>
+        <button onclick="window.print()">print</button>
+           `)
+          }
+        })
+    </script>
+</body>
+</html>

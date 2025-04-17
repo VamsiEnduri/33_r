@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="loginForm">
+ <input type="email" name="" id="loginEmail" required>
+ <input type="password" name="" id="loginPassword" required>
+ <button type="submit">login</button>
+    </form>
+
+    <script>
+        let loginEmail=document.getElementById("loginEmail")
+        let loginPassword=document.getElementById("loginPassword")
+const loginFormSubmitBtn=document.getElementById("loginForm")
+
+loginFormSubmitBtn.addEventListener("submit",(e)=>{
+e.preventDefault()
+
+const loginEmailValue=loginEmail.value.trim()
+const loginPasswordValue=loginPassword.value.trim()
+console.log(loginEmailValue,loginPasswordValue)
+
+const allUsers=JSON.parse(localStorage.getItem("allUsers"));
+console.log(allUsers,"in logi page")
+
+const userFound=allUsers.find((x)=>x.email === loginEmailValue && x.password === loginPasswordValue )
+console.log(userFound,"user fiund ")
+if(userFound){
+    localStorage.setItem("loggedInUser",JSON.stringify(userFound))
+      window.location.href="DashBaord.html"
+}else{
+    alert("no proper used foiund with your credentials entered")
+}
+})
+
+    </script>
+</body>
+</html>

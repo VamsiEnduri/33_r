@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="signupForm">
+        <input type="text" name="" id="name" required>
+        <input type="email" name="" id="email" required>
+        <input type="password" name="" id="password" required>
+        <button type="submit">signup</button>
+    </form>
+
+    <script>
+         let allUsers=JSON.parse(localStorage.getItem("allUsers"))||[]
+        let signupName=document.getElementById("name");
+        let signupEmail=document.getElementById("email")
+        let signupPassword=document.getElementById("password")
+        let signupFormSubmitBtn=document.getElementById("signupForm")
+        signupFormSubmitBtn.addEventListener("submit",(e)=>{
+            e.preventDefault()
+           let   signupNameValue=signupName.value.trim()
+           let signupEmailValue=signupEmail.value.trim()
+           let signupPasswordValue=signupPassword.value.trim()
+          
+          
+           let signupuserDetails={
+            name:signupNameValue,
+            email:signupEmailValue,
+            password:signupPasswordValue
+           }
+           console.log(signupuserDetails)
+           allUsers.push(signupuserDetails)
+           localStorage.setItem("allUsers",JSON.stringify(allUsers))
+           alert("signup done !!! going to login page")
+           window.location.href="Login.html"
+        })
+        console.log(signupName)
+        console.log(signupEmail)
+        console.log(signupPassword)
+        console.log(allUsers)
+
+
+
+        // const details={
+        //     name:"vamsi",
+        //     email:"v@gmial.com",
+        //     password:"12345678"
+        // }
+
+        // JSON :-- JSON.stringify()
+
+        // const details={
+        //     "name":"vamsi",
+        //     "email":"v@gmial.com",
+        //     "password":"12345678"
+        // }
+
+
+        // console.log(typeof details)
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎟️ Movie Seat Booking</title>
+  <style>
+    body { font-family: sans-serif; background: #fef9e7; padding: 2rem; }
+    h1 { color: #d35400; }
+    button { padding: 10px 20px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🎬 Welcome to Movie Seat Booking</h1>
+  <button id="bookNow">Book Tickets</button>
+
+
+  <script>
+    const bookNow = document.getElementById("bookNow");
+
+
+    bookNow.addEventListener("click", () => {
+      alert("🛎️ Please complete the booking within 5 minutes!");
+
+
+      const theaters = ["PVR Inox", "Cinepolis", "Asian Cinemas", "AMB Mall"];
+      let theatreList = "Choose a theatre:\n";
+      theaters.forEach((t, i) => {
+        theatreList += `${i + 1}. ${t}\n`;
+      });
+
+
+      const theatreChoice = prompt(theatreList);  
+      const theatre = theaters[theatreChoice - 1]; 
+
+
+      if (!theatre) {
+        alert("❌ Invalid choice. Booking cancelled.");
+        return;
+      }
+
+
+      const movie = prompt("🎥 Enter the movie name:");
+      if (!movie) return alert("❌ Movie name required. Booking cancelled.");
+
+
+      const row = prompt("🔠 Choose a row (A - E):").toUpperCase();
+      if (!["A", "B", "C", "D", "E"].includes(row)) {
+        return alert("❌ Invalid row. Booking cancelled.");
+      }
+
+
+      const seat1 = prompt("Enter Seat 1 number (1 - 10):");
+      const seat2 = prompt("Enter Seat 2 number (1 - 10):");
+
+
+      if (!seat1 || !seat2) return alert("❌ Seats required. Booking cancelled.");
+
+
+      const confirmPayment = confirm(`Confirm booking for:\n🎬 Movie: ${movie}\n🏢 Theatre: ${theatre}\nRow: ${row}\nSeats: ${seat1}, ${seat2}\nTotal: ₹300`);
+
+
+      if (!confirmPayment) return alert("❌ Payment Cancelled.");
+
+
+
+
+      alert("✅ Payment Successful. Generating Ticket...");
+
+
+      // Create ticket in new tab
+      const ticket = window.open("", "_blank");
+      ticket.document.write(`
+        <h1>🎟️ Movie Ticket</h1>
+        <p><strong>Name:</strong> Guest User</p>
+        <p><strong>Movie:</strong> ${movie}</p>
+        <p><strong>Theatre:</strong> ${theatre}</p>
+        <p><strong>Row:</strong> ${row}</p>
+        <p><strong>Seats:</strong> ${seat1}, ${seat2}</p>
+        <p><strong>Total Paid:</strong> ₹300</p>
+        <p><strong>Status:</strong> Confirmed ✅</p>
+        <button onclick="window.print()">🖨️ Print Ticket</button>
+      `);
+    });
+  </script>
+</body>
+</html>
