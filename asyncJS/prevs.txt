@@ -1,0 +1,16 @@
+
+async js :-- started yesteday 22-04-25
+
+sync / async 
+
+sync :-- line by line execute
+
+callstack block :-- execution a specifc line daggara stop ayyipotadhi
+
+async js :-- 
+
+setTimeout and setInetrval
+
+async js code :-- 
+
+callback functions and nested callback fns

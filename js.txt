@@ -1,0 +1,12 @@
+in js :-- 
+2 ways lo excute
+
+1:-- syncronous way :-- line by line oka order lo
+2.:-- async way  :-- code line by lin execute avutunnappudu, if in case any line is taking more time to get executed
+
+
+
+synchronous eample :--
+console.log("start")
+---> 20 sec  :-- blocking main thread (callstack) :-- ec :- 2 :--a.m  b.ce 
+console.log("end")

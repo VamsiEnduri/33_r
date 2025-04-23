@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function first(x,y,fun){
+      //   console.log(x+y)
+      //   fun()
+      // }
+
+      // first(10,20,function cb(){
+      //     console.log("this iscb function")
+      // })
+
+      // setTimeout(()=>{
+      //                console.log("this is cb function in setTimeout")
+      //     },2000)
+
+      //   let xyz=  setInterval(() => {
+      //         console.log("setinterval")
+
+      //     }, 1000);
+
+      //     clearInterval(xyz)
+
+      // nested callfunctions
+
+      //     function one(fun){
+      //            fun()
+      //     }
+
+      //     function two(){
+      //   console.log("hello")
+      //     }
+
+      //     one(two)
+      // two()
+
+      // function a(x,y){
+      //      x(y)
+      // }
+
+      // function b(xyz){
+      //    xyz()
+      // }
+
+      // function c(){
+      //      console.log("vamsi")
+      // }
+
+      // a(b,c)
+
+      // swiggy food delievery
+
+      function biryaniOrder(orderPickByResturant) {
+        console.log("biryani ordered")
+        setTimeout(()=>{
+            orderPickByResturant()
+        },5000)
+      }
+
+      function orderPickByResturant(foodPreaparing) {
+        console.log("your iorder is picked by resturant")
+
+        // setTimeout(()=>{
+        //     foodPreaparing()
+        // },4000)
+      }
+
+      function foodPreaparing(){
+               console.log("food is preaparing")
+      }
+
+      // function orderPicked(){
+
+      // }
+
+      // function orderOnWheels(){
+
+      // }
+
+      // function orderDelivered(){
+
+      // }
+
+      biryaniOrder(()=>{
+        orderPickByResturant(()=>{
+            foodPreaparing()
+        })
+      });
+    </script>
+  </body>
+</html> -->
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+function orderFood(callback) {
+  console.log("Food ordered.");
+  setTimeout(function() {
+    callback("Food ordered!");
+  }, 1000);
+}
+
+function makePayment(callback) {
+  console.log("Payment processing...");
+  setTimeout(function() {
+    callback("Payment successful!");
+  }, 2000);
+}
+
+function deliverFood(callback) {
+  console.log("Food is being delivered.");
+  setTimeout(function() {
+    callback("Food delivered!");
+  }, 3000);
+}
+
+// Nested callbacks, also known as callback hell
+orderFood(function() {
+  makePayment(function() {
+    deliverFood(function() {
+      console.log("Enjoy your meal!");
+    });
+  });
+});
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   setTimeout(() => {
+      //     function order(xyz) {
+      //       console.log("food ordered");
+      //       xyz()
+      //     }
+      //     order(() => {
+      //       setTimeout(() => {
+      //         function foodPreaparing() {
+      //           console.log("food preparing");
+      //         }
+      //         foodPreaparing()
+      //       },4000);
+      //     });
+      //   }, 3000);
+
+        setTimeout(() => {
+          console.log("food ordered");
+          setTimeout(() => {
+            console.log("food preaparing");
+
+            setTimeout(() => {
+              console.log("picked by delivery partner");
+
+              setTimeout(() => {
+                console.log("food recived !!!");
+              });
+            }, 5000);
+          }, 300);
+        }, 3000);
+
+    //   setTimeout(() => {
+    //     console.log("food orded");
+    //   }, 2000);
+
+    //   setTimeout(() => {
+    //     console.log("food delievreed");
+    //   }, 1000);
+    </script>
+  </body>
+</html>
