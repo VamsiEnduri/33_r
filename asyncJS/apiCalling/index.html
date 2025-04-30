@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    const output= fetch("https://dummyjson.com/recipes");
+    //      const output2= output.then(res=>{
+    //         return res.json()
+    //      })
+    //      const output3= output2.then (res=>{
+    //         return res
+    //      })
+    //     console.log(output3)
+
+
+    // async  // it is just a keyword which make a function to behave as async code
+    // await  // await it is a keyword which make js engine to wait for until promose resolves r rehects
+
+
+   async function getData(){
+       let res=await fetch("https://dummyjson.com/recipes")
+       let res2= await res.json()
+      let finalRes=res2.recipes
+      console.log(finalRes)
+
+      finalRes.forEach((recipe)=>{
+            console.log(recipe.name)
+      })
+    //    console.log(res.json())
+    }
+    getData()
+
+       
+       // is used to make http reuqests and GET is default req method
+    </script>
+</body>
+</html>

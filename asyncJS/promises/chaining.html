@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let order = new Promise((resolve, reject) => {
+        if (0) {
+          resolve("successfully order!!!");
+        } else {
+          reject("not ordered any food");
+        }
+      });
+
+      let preparing = new Promise((resolve, reject) => {
+        if (false) {
+          resolve("food is preapred!!!");
+        } else {
+          reject("order mot taken by resturant");
+        }
+      });
+
+      let onWheels = new Promise((resolve, reject) => {
+        if (true) {
+          resolve("your food delivery partner is on his wheels");
+        } else {
+          reject("not delivered");
+        }
+      });
+
+      order
+        .then((res) => {
+          console.log(res);
+          return preparing;
+        })
+        .then((res) => {
+          console.log(res);
+          return onWheels;
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err, "err"));
+    </script>
+  </body>
+</html>

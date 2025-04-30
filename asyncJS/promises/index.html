@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         function a(x){
+      //  console.log("a functiuon")
+      //  x()
+      //         }
+
+      //         function b(y){
+      //           console.log(10+20)
+      //         y()
+      //         }
+      //         a(()=>{
+      //                 b(()=>{
+      //                     b(()=>{
+      //                                 console.log("vamsi")
+      //                     })
+      //                 })
+      //         })
+
+      //executer function
+      //  const a=new Promise((resolve, reject)=>{
+      //     // console.log(reject(), resolve())
+      //    resolve()
+      //          console.log("this si a promise")
+      //  })
+      // promise is an object which is undergoes through three stages initially pending and reaming 2 are successfula nd rejected
+      //  console.log(a)
+
+      // const a=new Promise((resolve,reject)=>{
+      //     let a=100;
+      //     if(a){
+      //         resolve("yes its successfulll")
+      //     }else{
+      //         reject("no its rejected")
+      //     }
+      // })
+      // console.log(a)
+
+      // const foodOrdered=new Promise((resolve,reject)=>{
+      //     let foodOrder=false;
+      //     if(foodOrder){
+      //         resolve("you have ordedred food!!!!")
+      //     }else{
+      //         reject("you havent ordered food")
+      //     }
+      // })
+
+      // const foodPrearing=new Promise((resolve,reject)=>{
+      //     let foodPrepare=true;
+      //     if(foodPrepare){
+      //         resolve("your food is getting preapred!!!!")
+      //     }else{
+      //         reject("you are food preapartion cancelled")
+      //     }
+      // })
+
+      // foodOrdered.then((res)=>{
+      //     console.log(res)
+      //     foodPrearing.then((res)=>console.log(res))
+      // }).catch((err)=>{
+      //   console.log(err)
+      // })
+
+    //   foodOrdered = new Promise((resolve, reject) => {
+    //     let foodOrder = true;
+    //     if (foodOrder) {
+    //       setTimeout(() => {
+    //         resolve("you have ordedred food!!!!");
+    //       }, 3000);
+    //     } else {
+    //       reject("you havent ordered food");
+    //     }
+    //   });
+
+    //   const foodPrearing = new Promise((resolve, reject) => {
+    //     let foodPrepare = true;
+    //     if (foodPrepare) {
+    //       resolve("your food is getting preapred!!!!");
+    //     } else {
+    //       reject("you are food preapartion cancelled");
+    //     }
+    //   });
+
+    //   const foodDelivered = new Promise((resolve, reject) => {
+    //     let foodDeliver = true;
+    //     if (foodDeliver) {
+    //       resolve("your food is delievred!!!!");
+    //     } else {
+    //       reject("you are not getting food ");
+    //     }
+    //   });
+
+    //   foodOrdered
+    //     .then((res) => {
+    //       console.log(res);
+    //       foodPrearing.then((res) => {
+    //         console.log(res);
+    //         foodDelivered.then((res) => console.log(res));
+    //       });
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //     });
+
+
+    // fetch() // which is an web api and it used to perform http requests
+                                                      //4 
+                                                      // 1.GET 
+                                                      //2 .POST
+                                                      //3. PUT / PATCH (editing)
+                                                      //4. DELETE
+
+//   const dataGet=  fetch("https://fakestoreapi.com/products").then(res=>res.json()).then(data=>data)
+
+//   console.log(dataGet)
+
+
+fetch('https://fakestoreapi.com/products')
+  .then(response => response.json())
+  .then(data => console.log(data));
+  
+  // promise chaining  :-- def, example
+  // fetch and api calling and consoling the data
+  // async await -->
+  // async await and api calling :-- 
+
+    </script>
+  </body>
+</html>

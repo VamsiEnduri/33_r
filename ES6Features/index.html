@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+        // default parameters
+           function greeting(name,age=26){
+            alert(`hello ${name} and you are ${age} old`)  // template literals
+           }
+        //    greeting("vamsi")
+
+
+           function movie(m_name,ticket=500,theatre="viswanath",hero="NTR",director="neel"){
+                  let movieDetails=document.createElement("div")
+                  movieDetails.innerHTML=`
+                  <h1>${m_name}</h1>
+                  <p>${ticket}</p>
+                  <span>hero :-- ${hero}</span>
+                  <span>director :-- ${director}</span>
+                  <span>movie hall :-- ${theatre}</span>
+                  
+                  `
+                  document.body.append(movieDetails)
+           }
+        //    movie("NTRNEEL31")
+
+
+           function welcome(name="buddy"){
+            alert(`hey ${name}`)
+        
+            document.body.innerText=name
+           }
+        //    welcome()
+
+
+
+
+
+
+        const hyd={
+            name:"hyderabad",
+            isMetroPloitan:true,
+            isJobs:true,
+            isAffordableLiving:true
+        }
+        // destructuring 
+        const {name,isMetroPloitan,isJobs,isAffordableLiving}=hyd
+        console.log(name,isAffordableLiving,isJobs,isMetroPloitan)
+
+
+        const arr=["vamsi","ravi","raju"];
+        const [x,y,z]=arr
+        console.log(x)
+
+
+
+
+
+
+
+
+        //spread opeartor
+        let arr1=["laptopDell",55000]
+
+        let arr2=["silver",512, 8]
+
+        let completeDetails=[...arr1,...arr2]
+        console.log(completeDetails) 
+
+
+        let obj1={
+            name:"vamsi",age:26
+        }
+        let obj2={
+            job:"devloper&trainer",
+            instaPage:"@dvlpr__avvu",
+            sal:10000
+        }
+
+        let personDetails={
+           ...obj1,
+           ...obj2
+        }
+        console.log(personDetails)
+    //   console.log(hyd.isAffordableLiving)
+
+
+    //rest opeartor
+
+    function a(x,...y){
+            console.log(x)
+            console.log(y)
+    }
+    a(10,20,"vamsi",true,undefined,[1,2,3])
+
+   </script> 
+</body>
+</html>

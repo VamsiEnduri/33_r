@@ -1,0 +1,34 @@
+async js :-- 
+setTimeout
+calback func
+neested callback func
+promises
+promise chaining 
+async await fetch api calling
+
+
+es6 features 40 mins 
+let & const 2015  ECMASCRIPT
+template literals  `hello ${name}` --> hello vamsi
+default parameters   (a=10,b=20)
+destructuring a=[1,2,3] --> a[0] a[1]   -> [x,y,z]=a    console.log(x)
+rest opeartor  ...
+func a(x,...v){
+ console.log(x,v)
+}
+a(10,20,30)
+spread opeartor   a=[1,2]   b=[...a,3,4,5]   --> console.log(b)  -> [1,2,3,4,5]
+
+class 
+
+
+
+json-server   -- projects :-- crud          2 branches , merging
+modules
+class and this and constructor            1
+e-commerce project () :-- 1 r 2 dys            2
+
+firebase  :-- projects :-- crud :-- 2 r 3 dys          3
+2 interview qna series after firebase         2
+
+
