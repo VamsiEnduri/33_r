@@ -1,0 +1,22 @@
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
+}
+#navbar_links{
+    display: flex;
+    gap: 30px;
+}
+#navbar_links >span{
+    background-color: lightcoral;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.devTypeBtn{
+    background-color: lightblue;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+}

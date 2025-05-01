@@ -1,0 +1,260 @@
+{
+    "developers": {
+      "frontendDev": [
+        {
+          "id": 1,
+          "name": "Alice Johnson",
+          "role": "Frontend Developer",
+          "email": "alice.johnson@example.com",
+          "skills": ["HTML", "CSS", "JavaScript", "React", "Vue.js"],
+          "experience": 3
+        },
+        {
+          "id": 2,
+          "name": "Bob Smith",
+          "role": "Frontend Developer",
+          "email": "bob.smith@example.com",
+          "skills": ["HTML", "CSS", "JavaScript", "Angular", "Sass"],
+          "experience": 4
+        },
+        {
+          "id": 3,
+          "name": "Charlie Brown",
+          "role": "Frontend Developer",
+          "email": "charlie.brown@example.com",
+          "skills": ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
+          "experience": 2
+        },
+        {
+          "id": 4,
+          "name": "David Wilson",
+          "role": "Frontend Developer",
+          "email": "david.wilson@example.com",
+          "skills": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+          "experience": 5
+        },
+        {
+          "id": 5,
+          "name": "Eva Green",
+          "role": "Frontend Developer",
+          "email": "eva.green@example.com",
+          "skills": ["HTML", "CSS", "JavaScript", "Vue.js", "Bootstrap"],
+          "experience": 3
+        }
+      ],
+      "backendDev": [
+        {
+          "id": 6,
+          "name": "Frank Castle",
+          "role": "Backend Developer",
+          "email": "frank.castle@example.com",
+          "skills": ["Node.js", "Express.js", "MongoDB", "JavaScript"],
+          "experience": 4
+        },
+        {
+          "id": 7,
+          "name": "Grace Lee",
+          "role": "Backend Developer",
+          "email": "grace.lee@example.com",
+          "skills": ["Node.js", "Express.js", "MongoDB", "TypeScript"],
+          "experience": 5
+        },
+        {
+          "id": 8,
+          "name": "Henry Clark",
+          "role": "Backend Developer",
+          "email": "henry.clark@example.com",
+          "skills": ["Java", "Spring Boot", "MySQL", "JPA"],
+          "experience": 6
+        },
+        {
+          "id": 9,
+          "name": "Ivy Carter",
+          "role": "Backend Developer",
+          "email": "ivy.carter@example.com",
+          "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+          "experience": 3
+        },
+        {
+          "id": 10,
+          "name": "Jack Walker",
+          "role": "Backend Developer",
+          "email": "jack.walker@example.com",
+          "skills": ["Ruby", "Ruby on Rails", "PostgreSQL"],
+          "experience": 4
+        }
+      ],
+      "sqlDev": [
+        {
+          "id": 11,
+          "name": "Liam Anderson",
+          "role": "SQL Developer",
+          "email": "liam.anderson@example.com",
+          "skills": ["SQL", "MySQL", "PostgreSQL", "SQL Server"],
+          "experience": 4
+        },
+        {
+          "id": 12,
+          "name": "Mia Davis",
+          "role": "SQL Developer",
+          "email": "mia.davis@example.com",
+          "skills": ["SQL", "Oracle", "MySQL", "Database Design"],
+          "experience": 3
+        },
+        {
+          "id": 13,
+          "name": "Noah Clark",
+          "role": "SQL Developer",
+          "email": "noah.clark@example.com",
+          "skills": ["SQL", "PostgreSQL", "T-SQL", "Database Optimization"],
+          "experience": 5
+        },
+        {
+          "id": 14,
+          "name": "Olivia Martinez",
+          "role": "SQL Developer",
+          "email": "olivia.martinez@example.com",
+          "skills": ["SQL", "Oracle", "MySQL", "Data Warehousing"],
+          "experience": 4
+        },
+        {
+          "id": 15,
+          "name": "Parker Wilson",
+          "role": "SQL Developer",
+          "email": "parker.wilson@example.com",
+          "skills": ["SQL", "MySQL", "PostgreSQL", "SQL Optimization"],
+          "experience": 6
+        }
+      ],
+      "fullstackDev": [
+        {
+          "id": 16,
+          "name": "Quinn Moore",
+          "role": "Fullstack Developer",
+          "email": "quinn.moore@example.com",
+          "skills": ["Node.js", "React", "MongoDB", "Express.js"],
+          "experience": 5
+        },
+        {
+          "id": 17,
+          "name": "Ryan Scott",
+          "role": "Fullstack Developer",
+          "email": "ryan.scott@example.com",
+          "skills": ["React", "Node.js", "MongoDB", "TypeScript"],
+          "experience": 4
+        },
+        {
+          "id": 18,
+          "name": "Sophia Adams",
+          "role": "Fullstack Developer",
+          "email": "sophia.adams@example.com",
+          "skills": ["Angular", "Node.js", "Express.js", "MongoDB"],
+          "experience": 3
+        },
+        {
+          "id": 19,
+          "name": "Toby Roberts",
+          "role": "Fullstack Developer",
+          "email": "toby.roberts@example.com",
+          "skills": ["Node.js", "React", "MongoDB", "Redux"],
+          "experience": 4
+        },
+        {
+          "id": 20,
+          "name": "Uma Patel",
+          "role": "Fullstack Developer",
+          "email": "uma.patel@example.com",
+          "skills": ["JavaScript", "React", "Node.js", "MongoDB", "GraphQL"],
+          "experience": 5
+        }
+      ]
+    },
+    "testers": {
+      "automationTestEngg": [
+        {
+          "id": 21,
+          "name": "Vera Simmons",
+          "role": "Automation Test Engineer",
+          "email": "vera.simmons@example.com",
+          "skills": ["Selenium", "Java", "TestNG", "Cucumber"],
+          "experience": 4
+        },
+        {
+          "id": 22,
+          "name": "Walter Lee",
+          "role": "Automation Test Engineer",
+          "email": "walter.lee@example.com",
+          "skills": ["Selenium", "Python", "Cucumber", "Appium"],
+          "experience": 5
+        },
+        {
+          "id": 23,
+          "name": "Xander Foster",
+          "role": "Automation Test Engineer",
+          "email": "xander.foster@example.com",
+          "skills": ["Selenium", "Cypress", "JavaScript", "TestNG"],
+          "experience": 3
+        },
+        {
+          "id": 24,
+          "name": "Yara Owens",
+          "role": "Automation Test Engineer",
+          "email": "yara.owens@example.com",
+          "skills": ["Selenium", "Java", "TestNG", "Cucumber"],
+          "experience": 4
+        },
+        {
+          "id": 25,
+          "name": "Zane Wallace",
+          "role": "Automation Test Engineer",
+          "email": "zane.wallace@example.com",
+          "skills": ["Appium", "Java", "Selenium", "JUnit"],
+          "experience": 6
+        }
+      ],
+      "manualTestEngg": [
+        {
+          "id": 26,
+          "name": "Amira Gray",
+          "role": "Manual Test Engineer",
+          "email": "amira.gray@example.com",
+          "skills": ["Manual Testing", "Test Case Writing", "Bug Reporting"],
+          "experience": 4
+        },
+        {
+          "id": 27,
+          "name": "Brian Knight",
+          "role": "Manual Test Engineer",
+          "email": "brian.knight@example.com",
+          "skills": ["Manual Testing", "Test Execution", "Quality Assurance"],
+          "experience": 3
+        },
+        {
+          "id": 28,
+          "name": "Clara Rose",
+          "role": "Manual Test Engineer",
+          "email": "clara.rose@example.com",
+          "skills": ["Manual Testing", "Regression Testing", "Bug Tracking"],
+          "experience": 5
+        },
+        {
+          "id": 29,
+          "name": "Derek Stone",
+          "role": "Manual Test Engineer",
+          "email": "derek.stone@example.com",
+          "skills": ["Manual Testing", "Functional Testing", "Performance Testing"],
+          "experience": 3
+        },
+        {
+          "id": 30,
+          "name": "Ella Scott",
+          "role": "Manual Test Engineer",
+          "email": "ella.scott@example.com",
+          "skills": ["Manual Testing", "Test Planning", "Documentation"],
+          "experience": 4
+        }
+      ]
+    }
+  }
+
+
