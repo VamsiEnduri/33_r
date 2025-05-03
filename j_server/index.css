@@ -20,3 +20,28 @@
     border-radius: 3px;
     font-size: 15px;
 }
+
+#skillsContainer{
+    display: flex;
+    gap: 20px;
+    /* background-color: lightcoral; */
+}
+#skill{
+    background-color: lightcoral;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+#catWiseDevsContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+#devDiv{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
