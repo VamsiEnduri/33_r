@@ -27,6 +27,22 @@
         "Bootstrap"
       ],
       "experience": 3
+    },
+    {
+      "id": "c69f",
+      "name": "ravi",
+      "email": "ravi@gmail.com",
+      "role": "frontendDev",
+      "skills": [
+        "html",
+        " css",
+        " js",
+        " react",
+        " git/gitHub",
+        " bootstrap",
+        " redux"
+      ],
+      "exp": "0"
     }
   ],
   "backendDev": [
@@ -147,6 +163,19 @@
         "SQL Optimization"
       ],
       "experience": 6
+    },
+    {
+      "id": "ddb6",
+      "name": "srilekha",
+      "email": "srilekha@gmail.com",
+      "role": "sqlDev",
+      "skills": [
+        "sql",
+        " mySql",
+        " Oracle",
+        " MongoDB"
+      ],
+      "exp": "5"
     }
   ],
   "fullstackDev": [

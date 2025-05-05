@@ -6,14 +6,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
 </head>
 <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
     <div id="navbar">
         <h1 >VamsiSolutions</h1>
         <div id="navbar_links">
             <span id="devsBtn">Developers</span>
             <span id="testsBtn">Testers</span></div>
     </div>
+
+
+    <div class="modal fade" id="devloperModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="" id="devFormDetails">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Role</label>
+                    <select class="form-control" id="role" required>
+                        <option value="">choose yr role:--</option>
+                        <option value="frontendDev">Frontend Developer</option>
+                        <option value="backendDev">Backend Developer</option>
+                        <option value="fullstackDev">Fillstack Developer</option>
+                        <option value="sqlDev">SQL Developer</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Skills</label>
+                    <input type="text" class="form-control" id="skills" required />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Exp</label>
+                    <input type="number" class="form-control" id="experience" required />
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="devForm" class="btn btn-primary" id="submitDevForm">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+        </div>
+      </div>
 
 
     <div id="devlopersTypesBtnContainer"></div>

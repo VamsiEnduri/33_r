@@ -45,3 +45,19 @@
     padding: 10px;
     border-radius: 5px;
 }
+#devlopersTypesBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3rem;
+}
+
+#allTypesDevsBtns{
+    display: flex;
+    gap: 20px;
+}
+
+#addDevBtn{
+    background-color: chocolate;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
