@@ -1,10 +1,9 @@
 {
   "frontendDev": [
     {
-      "id": "3",
-      "name": "Charlie Brown",
-      "role": "Frontend Developer",
+      "name": "Charlie Brown 12345678",
       "email": "charlie.brown@example.com",
+      "role": "frontendDev",
       "skills": [
         "HTML",
         "CSS",
@@ -12,7 +11,8 @@
         "React",
         "TypeScript"
       ],
-      "experience": 2
+      "exp": "2",
+      "id": "3"
     },
     {
       "id": "5",
@@ -180,17 +180,17 @@
   ],
   "fullstackDev": [
     {
-      "id": "17",
-      "name": "Ryan Scott",
-      "role": "Fullstack Developer",
-      "email": "ryan.scott@example.com",
+      "name": "vamsi",
+      "email": "vamsi.enduri@example.com",
+      "role": "fullstackDev",
       "skills": [
         "React",
         "Node.js",
         "MongoDB",
         "TypeScript"
       ],
-      "experience": 4
+      "exp": "2",
+      "id": "17"
     },
     {
       "id": "18",
