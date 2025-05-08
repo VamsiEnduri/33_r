@@ -1,0 +1,111 @@
+js interview wuestions and answers series @2 
+1. what is DOM and what is the importance of it in web development? 
+    ans :-- Dom stands for Doc object modal and it is the main person whoc is responsible for interactivity with the webpage and it is used to maniplulate the docu ( elem t creation, elem append, elem styling, elem removing, elem traversing etc.. and events liek clicking mousing copying etc..)
+
+2.how can you add a element from js to html doc?
+    ans :-- we can create a elemnt which is html from js to html doc with documnet  object  i.e  => 
+    const div=document.createElement("div")
+    document.body.append(div)
+
+3.what is the d/f b/w the append() vs appendChild ?
+    ans :-- we use append() when i wannna add multiple elements to a certain div r element at TIME
+
+    DIV.append(H1,P,IMG)
+    DIV.appendChild(H1)
+
+4.what is the d/f b/w remove() and removeChild() ?
+
+    ans :--- document.remove(body)
+    const a=document.getElementById("person")
+    document.removeChild(body)
+
+5. how can you access elementwhich is inside the html doc to js file and how many are there to access a single element?
+
+i usually access element with byId however we can access in few ways 
+   1. byId
+   2.querySelector()
+   3.querySelectorAll()
+   4.byClassName()
+   5.byTagName()
+
+   yekkuva strain concpet understand and dom mnaiplutaion
+
+   react :-- 
+   virtualDOM   :--- 
+   fast updation of updation :--
+    less time consumption in manipulation of DOM :-- 
+
+
+6. what is the d/f b/w the DOM & BOM ? 
+
+to interact with browser , we need to use BOM whereas to interact with do we nee to use DOM
+
+for example :-- to interact with browser means if i wanna navigate from one location ti another location in browser window.location.href and if i wanna go back to previous page in browser i need to to use history()
+
+and coming to dom, if you wanna craete element need to use doc.createElement() and to append element to doc we need to use do.append and so on 
+
+7.what is JSON ?
+ javascript object notation and this is text based data
+ and we have 2 methods in it 
+ and they are :-- 
+ 1.JSON.stringify() :-- by uisng this method, we can convert object into stringified data
+ 2.JSON.parse() :--  by uisng this method, we can convert str into obj data
+
+8. what are web stoarge methods ? 
+
+ we have 2 web storage methods 
+ 1.local stoarge 
+ (it will store the data until unless we remove it) 
+ (upto 10MB)
+ there are few methods in locastoarge to manipluta ethe data
+ 1.setItem(key,value) :-- to set the data r to add the data
+ 2.getItem(key) :-- to get the data
+ 3.removeItem(key) :-- to remove the item 
+ 4.clear() :-- to remove entire data in LS
+
+ 2.session stoarge 
+ ( it will vanish immediately when you close the tab r window)
+ (upto 10mb)
+  1.setItem(key,value) :-- to set the data r to add the data
+ 2.getItem(key) :-- to get the data
+ 3.removeItem(key) :-- to remove the item 
+ 4.clear() :-- to remove entire data in LS
+
+
+9.what is async js and how it is different from sync js ?
+sync js is nothing but the code gets executed line by line with js engine
+where async js code will take some time to execute and it will be pushed to web api enevironment by js engine
+
+
+10.whats is callback functions ?
+
+11. what is call back hell in js? how can you overcome it ?
+
+12. drawabacks of callback functions ?
+
+13. what is promises? exaplin with example
+
+const a=new Promsie((resolve,reject)=>{
+
+})
+
+try cath and finally 
+.then .catch
+14. what is promise chaining ? example
+
+
+15.waht re the drawabacks of promises?
+
+16. what is async / await keywords in js?
+
+
+
+17.how can a http request and write and example ?
+
+fetch(url,{
+    method:'POST"
+})
+
+
+
+  
