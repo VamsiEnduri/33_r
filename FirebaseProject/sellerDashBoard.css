@@ -1,0 +1,49 @@
+#seller_navbar{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3rem;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+#seller_navbar > #seller_navbar_links {
+    display: flex;
+    gap: 30px;
+}
+
+
+#seller_navbar > #seller_navbar_links >span, #seller_navbar > #profile > span {
+   padding: 5px 15px;
+   border-radius: 3px;
+   border: 2px solid black;
+}
+
+#seller_navbar > #profile > span:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+#profile,#sellerBtns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+#sellerBtns{
+    margin-top: 2rem;
+}
+
+#sellerBtns > span{
+ padding: 5px 15px;
+   border-radius: 3px;
+   border: 2px solid black;
+   color: white;
+   background-color: black;
+   cursor: pointer;
+}
+

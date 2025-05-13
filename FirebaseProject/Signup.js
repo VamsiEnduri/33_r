@@ -1,5 +1,5 @@
 import {authentication,db} from "./fbConfig.js"
-import {createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js"
+import {createUserWithEmailAndPassword,updateProfile} from "https://www.gstatic.com/firebasejs/11.7.1/firebase-auth.js"
 import {setDoc,doc} from "https://www.gstatic.com/firebasejs/11.7.1/firebase-firestore.js"
 document.addEventListener("DOMContentLoaded",()=>{
     let signupForm=document.getElementById("signupForm")
@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     const userCredential=  await  createUserWithEmailAndPassword(authentication,email,password)
     console.log(userCredential)
+    const userdetails=userCredential.user;
+
+    console.log(userdetails,"user details")
+
+ await updateProfile(userdetails,{
+    displayName:name,
+ })
+
+
+
+    
 
 
     await setDoc(doc(db,`${role}s`,name),{
